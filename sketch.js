@@ -6,7 +6,7 @@ let coinX, coinY;  // 은화의 위치
 let coinSpeedX, coinSpeedY;  // 은화의 속도
 
 let startTime;  // 카운트다운 시작 시간
-let countdown = 7;  // 8초 카운트다운
+let countdown = 5;  // 8초 카운트다운
 let countdownStarted = false;  // 카운트다운이 시작되었는지 여부
 
 function setup() {
@@ -19,8 +19,8 @@ function setup() {
   coinY = height / 2;
 
   // 은화의 초기 속도 (기본 속도 설정)
-  coinSpeedX = random(10, 1);  // x축 속도 (랜덤)
-  coinSpeedY = random(10, 1);  // y축 속도 (랜덤)
+  coinSpeedX = random(2, 2);  // x축 속도 (랜덤)
+  coinSpeedY = random(2, 2);  // y축 속도 (랜덤)
 }
 
 function draw() {
@@ -57,7 +57,7 @@ function draw() {
   // 카운트다운 표시
   if (countdownStarted) {
     let elapsedTime = int((millis() - startTime) / 1000);
-    countdown = 7 - elapsedTime;
+    countdown = 5 - elapsedTime;
     if (countdown <= 0) {
       // 8초가 지나면 클릭 횟수 초기화
       clickCount = 0;
@@ -113,7 +113,7 @@ function mousePressed() {
   let d = dist(mouseX, mouseY, coinX, coinY);
   if (d < 40 && !showMessage) {  // 문구가 이미 나왔다면 더 이상 클릭하지 않도록
     clickCount++;  // 클릭 횟수 증가
-    shake = 1;  // 은화 진동 시작
+    shake = 2;  // 은화 진동 시작
 
     // 0.1초 후 진동 멈추기
     setTimeout(() => {
