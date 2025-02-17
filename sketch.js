@@ -19,8 +19,8 @@ function setup() {
   coinY = height / 2;
 
   // 은화의 초기 속도 (기본 속도 설정)
-  coinSpeedX = random(20, 50);  // x축 속도 (랜덤)
-  coinSpeedY = random(20, 50);  // y축 속도 (랜덤)
+  coinSpeedX = random(40, 50);  // x축 속도 (랜덤)
+  coinSpeedY = random(40, 50);  // y축 속도 (랜덤)
 }
 
 function draw() {
