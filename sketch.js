@@ -37,7 +37,7 @@ function draw() {
   
   if (showMessage) {
     // 클릭 횟수와 은화는 더 이상 보이지 않음
-    textSize(20);
+    textSize(50);
     text('드디어 은이 7번 연단되었습니다. 꽤나 고생하셨군요ㅎ ', width / 2, 300);
     text('이제 해당 성경 구절을 모두가 함께 외쳐주세요!!', width / 2, 350);
   } else {
@@ -118,7 +118,7 @@ function mousePressed() {
     // 0.1초 후 진동 멈추기
     setTimeout(() => {
       shake = 0;
-    }, 100);
+    }, 200);
 
     if (clickCount >= 7) {
       showMessage = true;  // 문구가 보이도록 설정
