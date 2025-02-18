@@ -20,7 +20,7 @@ function setup() {
 
   // 은화의 초기 속도 (기본 속도 설정)
   coinSpeedX = 30;  // X축 속도
-  coinSpeedY = 30;  // Y축 속도
+  coinSpeedY = 20;  // Y축 속도
 }
 
 function draw() {
