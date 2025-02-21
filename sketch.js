@@ -68,8 +68,8 @@ function draw() {
   }
 
   // 은화의 위치를 속도에 맞게 업데이트
-  coinX += coinSpeedX *1;
-  coinY += coinSpeedY *1;
+  coinX += coinSpeedX *1.2;
+  coinY += coinSpeedY *1.2;
 
   // 은화가 캔버스의 경계를 넘어가지 않도록 처리
   if (coinX <= 40 || coinX >= width - 40) {
