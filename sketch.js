@@ -19,8 +19,8 @@ function setup() {
   coinY = height / 2;
 
   // 은화의 초기 속도 (기본 속도 설정)
-  coinSpeedX = 10;  // X축 속도
-  coinSpeedY = 10;  // Y축 속도
+  coinSpeedX = 5;  // X축 속도
+  coinSpeedY = 5;  // Y축 속도
 }
 
 function draw() {
@@ -68,8 +68,8 @@ function draw() {
   }
 
   // 은화의 위치를 속도에 맞게 업데이트
-  coinX += coinSpeedX *5;
-  coinY += coinSpeedY *5;
+  coinX += coinSpeedX *1;
+  coinY += coinSpeedY *1;
 
   // 은화가 캔버스의 경계를 넘어가지 않도록 처리
   if (coinX <= 40 || coinX >= width - 40) {
