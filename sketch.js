@@ -19,8 +19,8 @@ function setup() {
   coinY = height / 2;
 
   // 적당한 속도 설정 (완벽한 중간 속도)
-  coinSpeedX = 3.5;
-  coinSpeedY = 3.5;
+  coinSpeedX = 5.5;
+  coinSpeedY = 5.5;
 }
 
 function draw() {
