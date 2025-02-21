@@ -52,7 +52,7 @@ function draw() {
   // 카운트다운 표시
   if (countdownStarted) {
     let elapsedTime = int((millis() - startTime) / 1000);
-    countdown = 3 - elapsedTime;
+    countdown = 7 - elapsedTime;
     if (countdown <= 0) {
       clickCount = 0;
       countdownStarted = false;  // 카운트다운 중지
