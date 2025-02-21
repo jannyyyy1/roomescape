@@ -114,7 +114,7 @@ function mousePressed() {
       shake = 0;
     }, 200);
 
-    if (clickCount >= 7) {
+    if (clickCount >= 3) {
       showMessage = true;  // 문구 표시
     }
   }
