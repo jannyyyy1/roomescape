@@ -62,8 +62,8 @@ function draw() {
   }
 
   // 적당한 속도로 이동 (너무 빠르지도, 너무 느리지도 않게)
-  coinX += coinSpeedX * 0.85;
-  coinY += coinSpeedY * 0.85;
+  coinX += coinSpeedX * 0.9;
+  coinY += coinSpeedY * 0.9;
 
   // 경계 반사 (속도를 일정하게 유지)
   if (coinX <= 40 || coinX >= width - 40) {
