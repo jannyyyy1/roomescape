@@ -6,7 +6,7 @@ let coinX, coinY;  // 은화의 위치
 let coinSpeedX, coinSpeedY;  // 은화의 속도
 
 let startTime;  // 카운트다운 시작 시간
-let countdown = 5;  // 5초 카운트다운
+let countdown = 3;  // 5초 카운트다운
 let countdownStarted = false;  // 카운트다운이 시작되었는지 여부
 
 function setup() {
@@ -52,7 +52,7 @@ function draw() {
   // 카운트다운 표시
   if (countdownStarted) {
     let elapsedTime = int((millis() - startTime) / 1000);
-    countdown = 5 - elapsedTime;
+    countdown = 3 - elapsedTime;
     if (countdown <= 0) {
       clickCount = 0;
       countdownStarted = false;  // 카운트다운 중지
